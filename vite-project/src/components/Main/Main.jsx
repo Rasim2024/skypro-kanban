@@ -10,6 +10,10 @@ function Main () {
           <div className="main__block">
             <div className="main__content">
              <Column/>
+             <Column/>
+             <Column/>
+             <Column/>
+             <Column/>
             </div>
           </div>
         </div>

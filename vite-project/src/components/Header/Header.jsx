@@ -1,4 +1,5 @@
 import PopUser from "../Popups/PopUser/PopUser "
+let Logo = ('./images/logo.png')
 
 const Header = () => {
     return (
@@ -7,12 +8,12 @@ const Header = () => {
             <div className="header__block">
               <div className="header__logo _show _light">
                 <a href="" target="_self">
-                  <img src="images/logo.png" alt="logo" />
+                  <img src={Logo} alt="logo" />
                 </a>
               </div>
               <div className="header__logo _dark">
                 <a href="" target="_self">
-                  <img src="images/logo_dark.png" alt="logo" />
+                  <img src="images/LogoDark.png" alt="logo" />
                 </a>
               </div>
               <nav className="header__nav">
