@@ -2,14 +2,13 @@ import React from "react";
 import Card from "../Card/Card";
 
 
-class Column extends React.Component {
-  render() {
+function Column (props) {
+ 
     return (
 
-      <>
-       <div className="main__column column">
+             <div className="main__column column">
                     <div className="column__title">
-                      <p>{this.props.status}</p>
+                      <p>{props.status}</p>
                     </div>
                     <div className="cards">
                       <Card/>
@@ -17,10 +16,10 @@ class Column extends React.Component {
                     </div>
                   </div>
                   
-      </>
+      
        )
   }
    
-}
+
 
 export default Column;

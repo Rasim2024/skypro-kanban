@@ -3,8 +3,8 @@ import Column from "../Column/Column"
 
 
 
-class Main extends React.Component {
-    render() {
+function Main () {
+    
       return (
         <main className="main">
         <div className="container">
@@ -21,6 +21,6 @@ class Main extends React.Component {
       </main>
     )
     }
-}
+
 
 export default Main
