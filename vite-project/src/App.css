@@ -1087,3 +1087,10 @@ body {
     display: block;
   }
 }
+
+/*  Дополнительно созданы и добавлены для стилизации */
+
+.load {
+  padding-top: 150px;
+  text-align: center;
+}
