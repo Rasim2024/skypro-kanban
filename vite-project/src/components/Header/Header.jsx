@@ -1,18 +1,17 @@
-import PopUser from "../Popups/PopUser/PopUser "
-import React, { useState } from "react"
- 
-
+import PopUser from "../Popups/PopUser/PopUser ";
+import React, { useState } from "react";
+import * as S from "./Header.styled";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   const openMenu = (e) => {
-    e.preventDefault()
-    setIsOpen(prev => !prev)
+    e.preventDefault();
+    setIsOpen((prev) => !prev);
   };
   return (
-    <header className="header">
+    <S.Header>
       <div className="container">
-        <div className="header__block">
+        <S.HeaderBlock>
           <div className="header__logo _show _light">
             <a href="" target="_self">
               <img src="/images/logo.png" alt="logo" />
@@ -23,19 +22,19 @@ const Header = () => {
               <img src="/images/LogoDark.png" alt="logo" />
             </a>
           </div>
-          <nav className="header__nav">
-            <button className="header__btn-main-new _hover01" id="btnMainNew">
+          <S.HeaderNav>
+            <S.HeaderButton id="btnMainNew">
               <a href="#popNewCard">Создать новую задачу</a>
-            </button>
-            <a onClick={openMenu} className="header__user _hover02">
+            </S.HeaderButton>
+            < S.HeaderUser onClick={openMenu} className="_hover02">
               Ivan Ivanov
-            </a>
+            </S.HeaderUser>
             <PopUser isOpen={isOpen} />
-          </nav>
-        </div>
+          </S.HeaderNav>
+        </S.HeaderBlock>
       </div>
-    </header>
+    </S.Header>
   );
 };
 
-export default Header
+export default Header;

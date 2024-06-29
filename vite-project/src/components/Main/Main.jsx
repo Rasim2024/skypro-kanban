@@ -1,4 +1,4 @@
-
+import *as S from "./Main.styled"
 import Column from "../Column/Column"
 import { statusList, } from "../../Data"
 
@@ -6,10 +6,10 @@ import { statusList, } from "../../Data"
 function Main ({cardList}) {
     
       return (
-        <main className="main">
+        <S.Main>
         <div className="container">
-          <div className="main__block">
-            <div className="main__content">
+          <S.MainBlock>
+            <S.MainContent>
               {/* код отображает компонент <Column>, передавая ему ключ key, заголовок title и 
               отфильтрованный список карточек cardList, где статус карточки соответствует текущему статусу из statusList. */}
              {statusList.map((status, id) => (  
@@ -21,10 +21,10 @@ function Main ({cardList}) {
               />
              ))}
              
-            </div>
-          </div>
+            </S.MainContent>
+          </S.MainBlock>
         </div>
-      </main>
+      </S.Main>
     )
     }
 
