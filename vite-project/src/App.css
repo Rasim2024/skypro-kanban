@@ -51,12 +51,12 @@ body {
   background-color: #F1F1F1;
 }
 
-.container {
+/* .container {
   max-width: 1260px;
   width: 100%;
   margin: 0 auto;
   padding: 0 30px;
-}
+} */
 
 ._hover01:hover {
   background-color: #33399b;
@@ -729,9 +729,9 @@ body {
   left: 0;
   padding: 0 10px;
 } */
-.header__logo img {
+/* .header__logo img {
   width: 85px;
-}
+} */
 /* .header__nav {
   max-width: 290px;
   padding: 0;
@@ -865,27 +865,27 @@ body {
   font-weight: 600;
   line-height: 10px;
 }
-.card__btn {
+/* .card__btn {
   width: 24px;
   height: 24px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 2px;
-}
+} */
 .card__btn div {
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background-color: #94A6BE;
 }
-.card__title {
+/* .card__title {
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
   color: #000000;
   margin-bottom: 10px;
-}
+} */
 /* .card__content {
   height: 64px;
   display: flex;

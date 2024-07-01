@@ -1,6 +1,7 @@
 import PopUser from "../Popups/PopUser/PopUser ";
 import React, { useState } from "react";
 import * as S from "./Header.styled";
+import *as C from "../Common/Common.styled"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,18 +11,14 @@ const Header = () => {
   };
   return (
     <S.Header>
-      <div className="container">
+      <C.Container>
         <S.HeaderBlock>
-          <div className="header__logo _show _light">
+          <S.HeaderLogo>
             <a href="" target="_self">
               <img src="/images/logo.png" alt="logo" />
             </a>
-          </div>
-          <div className="header__logo _dark">
-            <a href="" target="_self">
-              <img src="/images/LogoDark.png" alt="logo" />
-            </a>
-          </div>
+          </S.HeaderLogo>
+          
           <S.HeaderNav>
             <S.HeaderButton id="btnMainNew">
               <a href="#popNewCard">Создать новую задачу</a>
@@ -32,7 +29,7 @@ const Header = () => {
             <PopUser isOpen={isOpen} />
           </S.HeaderNav>
         </S.HeaderBlock>
-      </div>
+      </C.Container>
     </S.Header>
   );
 };

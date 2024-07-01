@@ -1,4 +1,5 @@
 import *as S from "./Main.styled"
+import *as C from "../Common/Common.styled"
 import Column from "../Column/Column"
 import { statusList, } from "../../Data"
 
@@ -7,7 +8,7 @@ function Main ({cardList}) {
     
       return (
         <S.Main>
-        <div className="container">
+        <C.Container>
           <S.MainBlock>
             <S.MainContent>
               {/* код отображает компонент <Column>, передавая ему ключ key, заголовок title и 
@@ -23,7 +24,7 @@ function Main ({cardList}) {
              
             </S.MainContent>
           </S.MainBlock>
-        </div>
+        </C.Container>
       </S.Main>
     )
     }

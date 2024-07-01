@@ -58,5 +58,9 @@ export const HeaderUser = styled.a`
   line-height: 20px;
   color: #565EEF;
 
+`;
+
+export const HeaderLogo = styled.div`
+width: 85px;
 `
 

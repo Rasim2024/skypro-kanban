@@ -1,4 +1,9 @@
-
+export const themeColors = {
+  "Web Disign": "_orange",
+  Copywriting: "_purple",
+  Research: "_green",
+  default: "_gray",
+}
 
 
 export const topicStyles = {
@@ -18,4 +23,6 @@ export const topicStyles = {
       backgroundColor: "#94a6be",
       color: "#ffffff",
     },
+    
 };
+

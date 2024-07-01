@@ -69,4 +69,21 @@ export const CardDate = styled.div`
   align-items: center;
   justify-content: flex-start;
 
+`;
+
+export const CardBtn = styled.div`
+width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2px;
+`;
+
+export const CardTitle = styled.h3`
+font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 10px;
 `
