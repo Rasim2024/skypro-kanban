@@ -1,3 +1,4 @@
+import *as S from "./PopUser.styled"
 function PopUser({isOpen}) {
   return (
     <div
@@ -8,13 +9,15 @@ function PopUser({isOpen}) {
       {/* <a href="">x</a> */}
       <p className="pop-user-set__name">Ivan Ivanov</p>
       <p className="pop-user-set__mail">ivan.ivanov@gmail.com</p>
-      <div className="pop-user-set__theme">
+      <S.ThemeToggle>
+      
         <p>Темная тема</p>
-        <input type="checkbox" className="checkbox" name="checkbox" />
-      </div>
-      <button type="button" className="_hover03">
+        <input type="checkbox"  name="checkbox" />
+     
+      </S.ThemeToggle>
+      <S.UserButton >
         <a href="#popExit">Выйти</a>
-      </button>
+      </S.UserButton>
     </div>
   );
 }
