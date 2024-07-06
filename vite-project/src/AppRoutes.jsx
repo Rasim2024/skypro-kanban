@@ -12,6 +12,7 @@ import ExitPage from "./pages/ExitPage/ExitPage.jsx";
 import CardPage from "./pages/CardPage/CardPage.jsx";
 import RegisterPage from "./pages/RegisterPage/RegisterPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage.jsx";
+import NewCardPage from "./pages/NewCardPage/NewCardPage.jsx";
 
 function AppRoutes() {
   const [isAuth, setIsAuth] = useState(false);
@@ -23,11 +24,12 @@ function AppRoutes() {
         <Routes>
           <Route element={<PrivateRoute isAuth={isAuth} />}>
             <Route path={routesPages.MAIN} element={<HomePage />} />
+            <Route path={routesPages.NewCard} element={<NewCardPage />} />
             <Route
               path={routesPages.EXIT}
               element={<ExitPage setIsAuth={setIsAuth} />}
             />
-            <Route path={routesPages.CARD} element={<CardPage />} />
+            {/* <Route path={routesPages.CARD} element={<CardPage />} /> */}
           </Route>
           <Route path={routesPages.SIGNIN} element={<SignInPage setIsAuth={setIsAuth} />} />
           <Route path={routesPages.REGISTER} element={< RegisterPage />} />

@@ -6,7 +6,7 @@ export default function CardPage() {
     
       return (
     <>
-      <PopBrowse />
+      {/* <PopBrowse /> */}
     </>
   )
 }

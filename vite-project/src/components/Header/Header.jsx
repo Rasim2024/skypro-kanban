@@ -25,7 +25,7 @@ const Header = ({addCard}) => {
 
           <S.HeaderNav>
             <S.HeaderButton onClick={addCard}>
-            <Link to={routesPages.CARD}>Создать новую задачу</Link>
+            <Link to={routesPages.NewCard}>Создать новую задачу</Link>
             </S.HeaderButton>
             <S.HeaderUser onClick={openMenu} className="_hover02">
               Ivan Ivanov
