@@ -1,11 +1,7 @@
 import "./App.css";
-import Header from "./components/Header/Header.jsx";
-import PopBrowse from "./components/Popups/PopBrowse/PopBrowse.jsx";
-import PopNewCard from "./components/Popups/PopNewCard/PopNewCard.jsx";
-import Main from "./components/Main/Main.jsx";
-import PopExit from "./components/Popups/PopExit/PopExit";
-import { useEffect, useState } from "react";
-import { cardList } from "./Data.js";
+
+import { useState } from "react";
+
 import { GlobalStyle } from "./Global.styled.js";
 import { Route, Routes } from "react-router-dom";
 import { routesPages } from "./lib/routes.js";

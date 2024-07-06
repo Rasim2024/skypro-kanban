@@ -4,14 +4,16 @@ import CalendarCells from "../../Calendar/CalendarCells/Calendar";
 
 const PopBrowse = () => {
   const {userId} = useParams();
-  
+  // console.log({userId});
+
   return (
+    
     <div className="pop-browse" id="popBrowse">
       <div className="pop-browse__container">
         <div className="pop-browse__block">
           <div className="pop-browse__content">
-            <div className="pop-browse__top-block">
-              <h3 className="pop-browse__ttl">Название задачи {userId}</h3>
+            <div className="pop-browse__top-block" >
+              <h3 className="pop-browse__ttl">Название задачи {userId} </h3>
               <div className="categories__theme theme-top _orange _active-category">
                 <p className="_orange">Web Design</p>
               </div>
@@ -141,6 +143,7 @@ const PopBrowse = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
