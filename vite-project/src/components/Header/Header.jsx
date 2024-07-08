@@ -6,12 +6,13 @@ import { Link } from "react-router-dom";
 import { routesPages } from "../../lib/routes";
 
 
-const Header = ({addCard}) => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = (e) => {
     e.preventDefault();
     setIsOpen((prev) => !prev);
   };
+  
   
   return (
     <S.Header>
@@ -24,8 +25,8 @@ const Header = ({addCard}) => {
           </S.HeaderLogo>
 
           <S.HeaderNav>
-            <S.HeaderButton onClick={addCard}>
-            <Link to={routesPages.NewCard}>Создать новую задачу</Link>
+            <S.HeaderButton  >
+            <Link  to={routesPages.NewCard}>Создать новую задачу</Link>
             </S.HeaderButton>
             <S.HeaderUser onClick={openMenu} className="_hover02">
               Ivan Ivanov

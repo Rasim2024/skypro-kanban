@@ -1,5 +1,5 @@
 export const themeColors = {
-  "Web Disign": "_orange",
+  "Web Design": "_orange",
   Copywriting: "_purple",
   Research: "_green",
   default: "_gray",

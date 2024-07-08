@@ -20,9 +20,9 @@ function Card({ title, topic, date, id }) {
           </S.CardTopic>
           <Link to={`/card/${id}`}>
             <S.CardBtn>
-              <div />
-              <div />
-              <div />
+              <div></div> 
+              <div></div>
+              <div></div>
             </S.CardBtn>
           </Link>
         </S.CardGroup>

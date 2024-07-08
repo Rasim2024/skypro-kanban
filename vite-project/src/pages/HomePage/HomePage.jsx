@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header';
 import Main from '../../components/Main/Main';
 import { cardList } from '../../Data';
 import PopNewCard from '../../components/Popups/PopNewCard/PopNewCard';
+import { Outlet } from 'react-router-dom';
 
 export default function HomePage({setIsAuth}) {
     const [isLoading, setIsLoading] = useState(true);
@@ -27,12 +28,14 @@ export default function HomePage({setIsAuth}) {
         // а затем добавляем новую карточку newTask в конец этого массива. Таким образом, состояние cards обновляется, добавляя новую задачу.
     
           }
+
+          
   
   return (
     <>
       <Header setIsAuth={setIsAuth} />
       {isLoading ? <h1 className='load'>Данные загружаются...</h1> : <Main cardList={cards} />}
-      <PopNewCard addCard={addCard}/>
+      <Outlet />
     </>
   )
 }

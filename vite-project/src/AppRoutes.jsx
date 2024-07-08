@@ -23,16 +23,21 @@ function AppRoutes() {
       <div className="wrapper">
         <Routes>
           <Route element={<PrivateRoute isAuth={isAuth} />}>
-            <Route path={routesPages.MAIN} element={<HomePage />} />
-            <Route path={routesPages.NewCard} element={<NewCardPage />} />
-            <Route
-              path={routesPages.EXIT}
-              element={<ExitPage setIsAuth={setIsAuth} />}
-            />
-            {/* <Route path={routesPages.CARD} element={<CardPage />} /> */}
+            <Route path={routesPages.MAIN} element={<HomePage />}>
+              <Route path={routesPages.NewCard} element={<NewCardPage />} />
+              <Route
+                path={routesPages.EXIT}
+                element={<ExitPage setIsAuth={setIsAuth} />}
+              />
+              <Route path={routesPages.CARD} element={<CardPage />}></Route>
+            </Route>
+            
           </Route>
-          <Route path={routesPages.SIGNIN} element={<SignInPage setIsAuth={setIsAuth} />} />
-          <Route path={routesPages.REGISTER} element={< RegisterPage />} />
+          <Route
+            path={routesPages.SIGNIN}
+            element={<SignInPage setIsAuth={setIsAuth} />}
+          />
+          <Route path={routesPages.REGISTER} element={<RegisterPage />} />
           <Route path={routesPages.NOT_FOUND} element={<NotFoundPage />} />
         </Routes>
       </div>

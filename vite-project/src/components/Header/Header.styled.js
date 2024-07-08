@@ -13,6 +13,9 @@ export const HeaderButton = styled.button`
   font-weight: 500;
   margin-right: 20px;
   background-color: #565EEF;
+a{
+  color: white;
+}
 
   /* Применение hover01 */
   ${hover01}
