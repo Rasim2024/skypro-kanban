@@ -1,11 +1,11 @@
-import { getStyle } from "../../Data";
+import { Link } from "react-router-dom";
 import { themeColors } from "../../lib/topic";
 
 import * as S from "./Card.styled";
 
-function Card({ title, topic, date }) {
+function Card({ title, topic, date, id }) {
   // полученные пропсы от родителя подставляем и выводим
-  const color = themeColors[topic] || themeColors.default
+  const color = themeColors[topic] || themeColors.default;
   return (
     <S.CardsItem>
       <S.CardContainer>
@@ -13,16 +13,18 @@ function Card({ title, topic, date }) {
           {/* <div className={getStyle(topic)}>  {/* getstyle функция сопоставляет стили в зависимости от сатуса*/}
           {/* <p className={getStyle(topic)}>{topic}</p> */}
           {/* </div> */}
-           <S.CardTopic  $topicColor={color}>     {/*$ пропс для работы стилей */}
+          <S.CardTopic $topicColor={color}>
+            {" "}
+            {/*$ пропс для работы стилей */}
             <S.TopicText>{topic}</S.TopicText>
           </S.CardTopic>
-          <a href="#popBrowse" target="_self">
+          <Link to={`/card/${id}`}>
             <S.CardBtn>
-              <div />
-              <div />
-              <div />
+              <div></div> 
+              <div></div>
+              <div></div>
             </S.CardBtn>
-          </a>
+          </Link>
         </S.CardGroup>
         <S.CardContent>
           <a href="" target="_blank">

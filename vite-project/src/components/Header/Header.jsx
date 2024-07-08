@@ -1,7 +1,10 @@
 import PopUser from "../Popups/PopUser/PopUser ";
 import React, { useState } from "react";
 import * as S from "./Header.styled";
-import *as C from "../Common/Common.styled"
+import * as C from "../Common/Common.styled";
+import { Link } from "react-router-dom";
+import { routesPages } from "../../lib/routes";
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +12,8 @@ const Header = () => {
     e.preventDefault();
     setIsOpen((prev) => !prev);
   };
+  
+  
   return (
     <S.Header>
       <C.Container>
@@ -18,12 +23,12 @@ const Header = () => {
               <img src="/images/logo.png" alt="logo" />
             </a>
           </S.HeaderLogo>
-          
+
           <S.HeaderNav>
-            <S.HeaderButton id="btnMainNew">
-              <a href="#popNewCard">Создать новую задачу</a>
+            <S.HeaderButton  >
+            <Link  to={routesPages.NewCard}>Создать новую задачу</Link>
             </S.HeaderButton>
-            < S.HeaderUser onClick={openMenu} className="_hover02">
+            <S.HeaderUser onClick={openMenu} className="_hover02">
               Ivan Ivanov
             </S.HeaderUser>
             <PopUser isOpen={isOpen} />

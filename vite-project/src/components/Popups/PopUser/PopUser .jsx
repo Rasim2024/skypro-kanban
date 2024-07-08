@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom";
+import { routesPages } from "../../../lib/routes";
 import *as S from "./PopUser.styled"
 function PopUser({isOpen}) {
+  
   return (
     <div
       style={isOpen ? { display: "block" } : { display: "none" }}
       className="header__pop-user-set pop-user-set"
       id="user-set-target"
     >
-      {/* <a href="">x</a> */}
+      
       <p className="pop-user-set__name">Ivan Ivanov</p>
       <p className="pop-user-set__mail">ivan.ivanov@gmail.com</p>
       <S.ThemeToggle>
@@ -16,7 +19,7 @@ function PopUser({isOpen}) {
      
       </S.ThemeToggle>
       <S.UserButton >
-        <a href="#popExit">Выйти</a>
+      <Link to={routesPages.EXIT}>Выйти</Link>
       </S.UserButton>
     </div>
   );
